@@ -22,7 +22,6 @@ A **web-based scientific calculator** built with **HTML, CSS, and JavaScript**, 
 - Dark/Light mode toggle
 - Keyboard input support
 - Calculation history that persists in the browser
-  ![Calculator Screenshot](screenshot.png)
 
 
 
