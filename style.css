@@ -1,0 +1,111 @@
+/* Reset & Layout */
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #1d2671, #c33764);
+    font-family: "Segoe UI", Tahoma, sans-serif;
+}
+
+/* Calculator Container */
+.calculator {
+    background: #111;
+    padding: 20px;
+    width: 320px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+}
+
+/* Display */
+#display {
+    width: 100%;
+    height: 55px;
+    font-size: 24px;
+    text-align: right;
+    padding: 0 12px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 10px;
+    background: #f4f4f4;
+    color: #000;
+}
+
+#display:focus {
+    outline: none;
+}
+
+/* Buttons Grid */
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+/* Buttons */
+button {
+    height: 55px;
+    font-size: 16px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    background: #333;
+    color: #fff;
+    transition: background 0.2s ease, transform 0.1s ease;
+}
+
+button:hover {
+    background: #555;
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+/* Zero Button */
+.zero {
+    grid-column: span 2;
+}
+
+/* History Section */
+.history {
+    margin-top: 15px;
+    color: #fff;
+    font-size: 14px;
+}
+
+.history h3 {
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.history ul {
+    list-style: none;
+    padding: 0;
+    max-height: 120px;
+    overflow-y: auto;
+}
+
+.history li {
+    padding: 3px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.light {
+    background: #f2f2f2;
+}
+
+.light .calculator {
+    background: #ffffff;
+}
+
+.light button {
+    background: #e0e0e0;
+    color: #000;
+}
+
+.light button:hover {
+    background: #ccc;
+}
+
